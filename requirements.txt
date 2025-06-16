@@ -1,0 +1,43 @@
+# 团队管理工具依赖文件
+# Team Manager Dependencies
+#
+# 此文件包含 team_manager.py 运行所需的所有依赖库
+# 使用命令安装: pip install -r requirements.txt
+
+# ===== 核心依赖 (必需) =====
+
+# GUI框架 - PyQt6 (team_manager.py 的主要GUI框架)
+PyQt6>=6.4.0
+
+# HTTP请求库 - 用于API调用 (APIClient类使用)
+requests>=2.28.0
+
+# ===== 打包和部署工具 =====
+
+# 应用打包工具 (用于生成可执行文件)
+pyinstaller>=5.7.0
+
+# ===== 可选增强依赖 =====
+
+# 图像处理支持 (用于更好的图标显示)
+Pillow>=9.0.0
+
+# JSON处理增强 (可选，提升性能)
+ujson>=5.0.0
+
+# 系统信息获取 (可选，用于系统监控)
+psutil>=5.9.0
+
+# SSL/TLS 支持增强 (确保HTTPS请求安全)
+certifi>=2022.0.0
+
+# ===== 开发工具 (可选，注释掉) =====
+
+# 代码格式化
+# black>=22.0.0
+
+# 代码检查
+# flake8>=5.0.0
+
+# 类型检查
+# mypy>=0.991
